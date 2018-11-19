@@ -446,7 +446,6 @@ AUI_ERRCODE aui_Movie::Play( void )
 		// so we can enjoy smooth playback
 		Mix_HookMusic(audioCallback, film);
 		SDL_ffmpegStartDecoding(film); //returns always 0!
-		SDL_ffmpegPlay(film, 1);//unpause film sdl_ffmpeg > 0.7.1
 		
 #endif
 		m_isPlaying = TRUE;
@@ -547,7 +546,6 @@ AUI_ERRCODE aui_Movie::Stop( void )
 		Assert( err == 0 );
 		if ( err ) return AUI_ERRCODE_HACK;
 #elif defined(USE_SDL_FFMPEG)
-		SDL_ffmpegPlay(film, 0);//pause film sdl_ffmpeg > 0.7.1
 		g_soundManager->ReacquireSoundDriver(); //no function with SDL, see soundmanager.cpp
 #endif
 
