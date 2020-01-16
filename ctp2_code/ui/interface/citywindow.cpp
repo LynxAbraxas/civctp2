@@ -255,7 +255,7 @@ CityWindow::CityWindow(AUI_ERRCODE *err)
 	m_popSpinners[POP_MERCHANT]->SetSpinnerCallback(CityWindow::WorkerSpinnerCallback,
 													m_popSpinners[POP_MERCHANT]);
 
-	*err = aui_Ldl::SetActionFuncAndCookie(s_cityWindowBlock, "EditQueueButton", CityWindow::EditQueue, NULL);
+	*err = aui_Ldl::SetActionFuncAndCookie(s_cityWindowBlock, "EditQueueButton", CityWindow::WorkWin, NULL);
 	Assert(*err == AUI_ERRCODE_OK);
 
 	if (aui_Ldl::GetObject(s_cityWindowBlock, "NationalManagerButton"))
@@ -1420,6 +1420,37 @@ void CityWindow::EditQueue(aui_Control *control, uint32 action, uint32 data, voi
 		return;
 
 	EditQueue::Display(s_cityWindow->m_cityData);
+
+	s_cityWindow->Update();
+}
+
+//----------------------------------------------------------------------------
+//
+// Name       : CityWindow::WorkWin
+//
+// Description: Opens the Build Queue Manager. (Button callback function)
+//
+// Parameters : aui_Control *control
+//              uint32 action
+//              uint32 data
+//              void *cookie
+//
+// Globals    : -
+//
+// Returns    : -
+//
+// Remark(s)  : -
+//
+//----------------------------------------------------------------------------
+void CityWindow::WorkWin(aui_Control *control, uint32 action, uint32 data, void *cookie)
+{
+	if(action != AUI_BUTTON_ACTION_EXECUTE)
+		return;
+
+	if(!s_cityWindow)
+		return;
+
+	WorkWindow::Display(s_cityWindow->m_cityData);
 
 	s_cityWindow->Update();
 }

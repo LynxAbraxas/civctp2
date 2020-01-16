@@ -56,7 +56,7 @@ extern C3UI			*g_c3ui;
 WorkWindow			*g_workWindow = NULL;
 ResourceMap				*g_resourceMap = NULL;
 
-WorkMap *g_workMap = NULL;
+WorkMap  *g_workMap = NULL;
 
 static c3_Button			*s_exitButton;
 
