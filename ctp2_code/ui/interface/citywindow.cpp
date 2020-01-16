@@ -329,10 +329,10 @@ CityWindow::CityWindow(AUI_ERRCODE *err)
 		efficiencyBar->SetDrawCallbackAndCookie(CityWindow::DrawEfficiencyBar, NULL);
 	}
 
-	ctp2_Static *mapStatic = (ctp2_Static *)aui_Ldl::GetObject(s_cityWindowBlock, "Globals.ResourceMap");
-	if(mapStatic) {
-		mapStatic->SetDrawCallbackAndCookie(CityWindow::DrawResourceMap, NULL);
-	}
+	// ctp2_Static *mapStatic = (ctp2_Static *)aui_Ldl::GetObject(s_cityWindowBlock, "Globals.ResourceMap");
+	// if(mapStatic) {
+	// 	mapStatic->SetDrawCallbackAndCookie(CityWindow::DrawResourceMap, NULL);
+	// }
 
 	ctp2_DropDown *dd = (ctp2_DropDown *)aui_Ldl::GetObject(s_cityWindowBlock, "GovernorBox.Pulldown");
 	Assert(dd);
