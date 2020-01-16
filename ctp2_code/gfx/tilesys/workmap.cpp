@@ -161,6 +161,7 @@ void WorkMap::InitCommon( sint32 scale)
 
 AUI_ERRCODE WorkMap::DrawThis( aui_Surface *surface, sint32 x, sint32 y )
 {
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 	if ( IsHidden() ) return AUI_ERRCODE_OK;
 
 	if ( !surface ) surface = m_window->TheSurface();
@@ -244,6 +245,7 @@ void WorkMap::NotifyPopChanged()
 
 sint32 WorkMap::DrawSurface(void)
 {
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 	sint32 width = m_surface->Width();
 	sint32 height = m_surface->Height();
 
@@ -1250,6 +1252,7 @@ void WorkMap::DrawResourceIcons(aui_Surface *surface, sint32 x, sint32 y, MapPoi
 
 sint32 WorkMap::UpdateFromSurface(aui_Surface *destSurface, RECT *destRect)
 {
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 	RECT rect = {0,0,m_surface->Width(),m_surface->Height()};
 	g_c3ui->TheBlitter()->Blt(destSurface, destRect->left, destRect->top, m_surface, &rect, k_AUI_BLITTER_FLAG_COPY);
 	return 0;

@@ -56,6 +56,7 @@ AUI_ERRCODE WorkWindow::InitCommon(void)
 AUI_ERRCODE WorkWindow::DrawThis( aui_Surface *surface, sint32 x, sint32 y )
 {
 
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 	if ( IsHidden() ) return AUI_ERRCODE_OK;
 
 	RECT rect = { 0, 0, m_width, m_height };

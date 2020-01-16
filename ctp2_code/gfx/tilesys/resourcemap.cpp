@@ -782,6 +782,7 @@ void ResourceMap::DrawCityName(aui_Surface *surface, sint32 x, sint32 y, const U
 
 sint32 ResourceMap::UpdateFromSurface(aui_Surface *destSurface, RECT *destRect)
 {
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 	if(m_usedRect.right - m_usedRect.left < m_usedRect.bottom - m_usedRect.top) {
 
 		sint32 diff = (m_usedRect.bottom - m_usedRect.top) - (m_usedRect.right - m_usedRect.left);
@@ -804,6 +805,7 @@ sint32 ResourceMap::UpdateFromSurface(aui_Surface *destSurface, RECT *destRect)
 
 	RECT rect = {m_usedRect.left,m_usedRect.top,m_usedRect.right,m_usedRect.bottom};
 	g_c3ui->TheBlitter()->StretchBlt(destSurface, destRect, m_surface, &rect, k_AUI_BLITTER_FLAG_COPY);
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 
 	return 0;
 }

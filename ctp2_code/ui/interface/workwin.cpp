@@ -106,12 +106,14 @@ void WorkExitButtonActionCallback( aui_Control *control, uint32 action, uint32 d
 
 sint32 workwin_Initialize( void )
 {
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 	AUI_ERRCODE		errcode = AUI_ERRCODE_OK;
 	MBCHAR			windowBlock[ k_AUI_LDL_MAXBLOCK + 1 ];
 	MBCHAR			controlBlock[ k_AUI_LDL_MAXBLOCK + 1 ];
 
 	if ( g_workWindow ) {
 		if ( g_resourceMap ) {
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 			g_resourceMap->DrawSurface();
 		}
 		return 0;
@@ -144,6 +146,7 @@ sint32 workwin_Initialize( void )
 	strcpy(windowBlock, "WorkWindow");
 
 	g_workWindow = new WorkWindow(&errcode, aui_UniqueId(), windowBlock, 16, AUI_WINDOW_TYPE_FLOATING);
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 	Assert( AUI_NEWOK(g_workWindow, errcode) );
 	if ( !AUI_NEWOK(g_workWindow, errcode) ) return -1;
 
@@ -152,6 +155,7 @@ sint32 workwin_Initialize( void )
 	g_workWindow->SetDraggable( TRUE );
 
 	sprintf( controlBlock, "%s.%s", windowBlock, "ResourceMap" );
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 	g_resourceMap = new ResourceMap( &errcode, aui_UniqueId(), controlBlock );
 	Assert( AUI_NEWOK(g_resourceMap, errcode) );
 	if ( !AUI_NEWOK(g_resourceMap, errcode) ) return -3;
@@ -166,6 +170,7 @@ sint32 workwin_Initialize( void )
 
 
 	sprintf( controlBlock, "%s.%s", windowBlock, "ExitButton" );
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 	s_exitButton = new c3_Button( &errcode, aui_UniqueId(), controlBlock, WorkExitButtonActionCallback );
 	Assert( AUI_NEWOK(s_exitButton, errcode) );
 	if ( !AUI_NEWOK(s_exitButton, errcode) ) return -5;
@@ -173,6 +178,7 @@ sint32 workwin_Initialize( void )
 	errcode = aui_Ldl::SetupHeirarchyFromRoot( windowBlock );
 	Assert( AUI_SUCCESS(errcode) );
 	if ( !AUI_SUCCESS(errcode) ) return -1;
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 
 	return 0;
 }

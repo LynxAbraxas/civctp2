@@ -2106,12 +2106,15 @@ AUI_ERRCODE CityWindow::DrawResourceMap(ctp2_Static *control,
 										RECT &rect,
 										void *cookie)
 {
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 	if(!g_resourceMap) {
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 		workwin_Initialize();
 	}
 
 	Assert(g_resourceMap);
 	if(g_resourceMap) {
+        fprintf(stderr, "%s L%d: \n", __FILE__, __LINE__);
 		g_resourceMap->UpdateFromSurface(surface, &rect);
 	}
 	return AUI_ERRCODE_OK;
