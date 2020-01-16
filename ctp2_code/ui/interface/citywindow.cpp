@@ -332,6 +332,8 @@ CityWindow::CityWindow(AUI_ERRCODE *err)
 	ctp2_Static *mapStatic = (ctp2_Static *)aui_Ldl::GetObject(s_cityWindowBlock, "Globals.ResourceMap");
 	if(mapStatic) {
 		mapStatic->SetDrawCallbackAndCookie(CityWindow::DrawResourceMap, NULL);
+		*err = aui_Ldl::SetActionFuncAndCookie(s_cityWindowBlock, "Globals.ResourceMap", CityWindow::EditQueue, NULL);
+		Assert(*err == AUI_ERRCODE_OK);
 	}
 
 	ctp2_DropDown *dd = (ctp2_DropDown *)aui_Ldl::GetObject(s_cityWindowBlock, "GovernorBox.Pulldown");
