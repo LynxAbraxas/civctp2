@@ -43,7 +43,7 @@
 // Compiler flags
 //----------------------------------------------------------------------------
 
-#define _SMALL_MAPPOINTS	// Use 2 dimensions (no space layer) when defined
+// #define _SMALL_MAPPOINTS	// Use 2 dimensions (no space layer) when defined
 
 //----------------------------------------------------------------------------
 // Library imports
