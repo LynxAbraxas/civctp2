@@ -132,7 +132,7 @@ void MapPoint::Serialize(CivArchive &archive)
 		archive>>x;
 		archive>>y;
 #if !defined(_SMALL_MAPPOINTS)
-		archive >> z;
+		z= 0;
 #endif
 		}
 }
