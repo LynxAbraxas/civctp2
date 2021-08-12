@@ -23,13 +23,6 @@ typedef char				MBCHAR;
 extern sint32 g_turn;
 extern sint32 g_numPlayers;
 
-struct MapPointData {
-	MapPointData(sint16 X=0,
-		sint16 Y=0,
-		sint16 Z=0): x(X), y(Y), z(Z) {}
-	sint16 x,y,z;
-};
-
 class Player {
 public:
 	Player() : m_currentRound(0) {}
