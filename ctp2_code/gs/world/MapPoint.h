@@ -135,7 +135,7 @@ public:
 		x = (sint16)ix; y = (sint16)iy;
 	}
 #else
-	MapPoint(const sint32 ix, const sint32 iy, const sint32 iz) {
+	MapPoint(const sint32 ix, const sint32 iy, const sint32 iz = 0) {
 		x = ix; y = iy; z = iz;
 	}
 #endif
@@ -163,7 +163,7 @@ public:
 #ifdef _SMALL_MAPPOINTS
     void Set(sint32 ix, sint32 iy) { x = (sint16)ix; y = (sint16)iy; }
 #else
-    void Set(sint32 ix, sint32 iy, sint32 iz) { x = ix; y = iy; z = iz; }
+    void Set(sint32 ix, sint32 iy, sint32 iz = 0) { x = ix; y = iy; z = iz; }
 #endif
 
 	bool HasUnexploredNeighbor(sint32 player) const;
