@@ -90,13 +90,14 @@ struct MapPointData
 		y(a_Y),
 		z(a_Z)
 	{ };
-
-	sint16			z;
 #endif
 
 	// Coordinates
 	sint16			x;
 	sint16			y;
+#if !defined(_SMALL_MAPPOINTS) // seprate ifdef to avoid [-Wreorder]: will be initialized after
+	sint16			z;
+#endif
 
 	bool operator == (MapPointData const & point) const
 	{
