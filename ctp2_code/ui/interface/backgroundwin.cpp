@@ -200,6 +200,7 @@ AUI_ERRCODE background_draw_handler(LPVOID bg)
 		g_tiledMap->DrawLegalMove(surface);
 		g_screenManager->UnlockSurface();
 	}
+	g_tiledMap->DrawSpace(surface, paintRect);
 
 #ifdef _PLAYTEST
 	switch(g_debugOwner)

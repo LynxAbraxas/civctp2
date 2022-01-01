@@ -284,6 +284,40 @@ void  TiledMap::RectMetricNewLoop()
 
 #endif // _DEBUG
 
+void TiledMap::DrawSpace(aui_Surface *surface, const RECT & paintRect)
+{
+	if (!surface)
+	{
+		surface = m_surface;
+		if (!surface) return;
+	}
+
+	LockThisSurface(surface);
+	for (sint32 i = paintRect.top; i < paintRect.bottom; i++) {
+		for (sint32 j = paintRect.left; j < paintRect.right; j++) {
+
+			if (!g_theWorld->IsXwrap() && (j < 0 || j >= g_theWorld->GetXWidth()))
+				continue;
+
+			sint32 tileX,tileY;
+			maputils_WrapPoint(j,i,&tileX,&tileY);
+
+			sint32 mapY = tileY;
+			sint32 mapX = maputils_TileX2MapX(tileX, tileY);
+
+			sint32 pixelX;
+			sint32 pixelY;
+			maputils_MapXY2PixelXY(mapX, mapY, &pixelX, &pixelY);
+			pixelY += m_zoomTileHeadroom[m_zoomLevel];
+			sint32 offsetX = m_zoomTilePixelWidth[m_zoomLevel] / 2;
+			sint32 offsetY = m_zoomTilePixelHeight[m_zoomLevel] / 2;
+			primitives_ClippedPaintRect16(*surface, RECT{pixelX, pixelY, pixelX + offsetX, pixelY + offsetY},
+			                              g_colorSet->GetColor(COLOR_WHITE), 128);
+		}
+	}
+	UnlockSurface();
+}
+
 bool TiledMap::DrawImprovementsLayer(aui_Surface *surface, MapPoint &pos, sint32 x, sint32 y,bool clip)
 {
 	bool        drewSomething           = false;

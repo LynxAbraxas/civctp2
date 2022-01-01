@@ -413,6 +413,7 @@ public:
 	bool        CanDrawSpecialMove(SELECT_TYPE sType, Army &sel_army, const MapPoint &dest_pos);
 	void		DrawLegalMove(aui_Surface *pSurface);
 	void		DrawUnfinishedMove(aui_Surface *surface);
+	void		DrawSpace(aui_Surface *surface, const RECT & paintRect);
 
 	void		DrawPath(Path *path);
 
