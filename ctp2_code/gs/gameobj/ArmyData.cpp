@@ -9135,25 +9135,7 @@ void ArmyData::ActionSuccessful(SPECATTACK attack, Unit &unit, Unit const & c)
 	sint32 visiblePlayer = g_selected_item->GetVisiblePlayer();
 	if(spriteID != -1 && soundID != -1)
 	{
-		if(g_selected_item->IsAutoCenterOn())
-		{
-			if(
-			     (
-			       (visiblePlayer == m_owner
-				|| (unit.GetVisibility() & (1 << visiblePlayer))
-			       )
-			    || c.IsValid()
-			    && (c.GetOwner() == visiblePlayer()
-				|| (c.GetVisibility() & (1 << visiblePlayer)) // is true even if city is in FOW
-			       )
-			     )
-			  )
-			{
-				g_director->AddCenterMap( m_pos);
-			}
-		}
-
-		g_director->AddSpecialAttack(unit, c, attack);
+		g_director->AddSpecialAttack(unit, c, attack); // checks if map should be centered
 	}
 	else
 	{
