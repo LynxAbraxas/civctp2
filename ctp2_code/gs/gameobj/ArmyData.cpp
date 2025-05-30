@@ -9132,22 +9132,24 @@ void ArmyData::ActionSuccessful(SPECATTACK attack, Unit &unit, Unit const & c)
 	sint32  soundID  = rec ? rec->GetSoundIDIndex() : -1;
 	sint32  spriteID = rec ? rec->GetSpriteID()->GetValue() : -1;
 
+	sint32 visiblePlayer = g_selected_item->GetVisiblePlayer();
 	if(spriteID != -1 && soundID != -1)
 	{
 		if(g_selected_item->IsAutoCenterOn())
 		{
 			if(
 			     (
-			       (    m_owner == g_selected_item->GetVisiblePlayer()
-			         || (unit.GetVisibility() & (1 << g_selected_item->GetVisiblePlayer()))
+			       (visiblePlayer == m_owner
+				|| (unit.GetVisibility() & (1 << visiblePlayer))
 			       )
 			    || c.IsValid()
-			    && (    c.GetOwner() == g_selected_item->GetVisiblePlayer()
-			         || (c.GetVisibility() & (1 << g_selected_item->GetVisiblePlayer()))
+			    && (c.GetOwner() == visiblePlayer()
+				|| (c.GetVisibility() & (1 << visiblePlayer)) // is true even if city is in FOW
 			       )
 			     )
-			){
-				g_director->AddCenterMap(m_pos);
+			  )
+			{
+				g_director->AddCenterMap( m_pos);
 			}
 		}
 
@@ -9157,16 +9159,14 @@ void ArmyData::ActionSuccessful(SPECATTACK attack, Unit &unit, Unit const & c)
 	{
 		if(soundID != -1)
 		{
-			sint32 visiblePlayer = g_selected_item->GetVisiblePlayer();
-
 			if(visiblePlayer == m_owner
 			|| unit.GetVisibility() & (1 << visiblePlayer))
 			{
 				if(g_selected_item->IsAutoCenterOn() 
 				    && !g_director->TileWillBeCompletelyVisible(m_pos.x, m_pos.y)
-				    && g_player[g_selected_item->GetVisiblePlayer()]->IsVisible(m_pos)
+				    && g_player[visiblePlayer]->IsVisible(m_pos)
 				    ){ // center on pos if generally visible but not in current view
-				    g_director->AddCenterMap(m_pos);
+				    g_director->AddCenterMap( m_pos);
 				    }
 				
 				g_soundManager->AddSound(SOUNDTYPE_SFX, (uint32)0, 	soundID, m_pos.x, m_pos.y); // pos not used in SoundManager::AddSound, centering map could be implemented there, not sure though if that would cause troule for sounds not bound to a map position (e.g. click-sound)
