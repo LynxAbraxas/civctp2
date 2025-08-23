@@ -30,13 +30,13 @@ digraph G {
 			node_ADV_URBAN_PLANNING	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_SIX,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap003l.png"/></TD></TR><TR><TD><B>Urbanistica avanzata</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Urbanista<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mega-miniere<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap003l.png"/></TD></TR><TR><TD><B>Urbanistica avanzata</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Urbanista<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mega-miniere<BR align="left" /></TD></TR><TR><TD align="text">Mega-miniere<BR align="left" /></TD></TR><TR><TD align="text">Mega-miniere<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_AERODYNAMICS	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_SIX,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap005l.png"/></TD></TR><TR><TD><B>Aerodinamica</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Caccia<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Aeroporto<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Base aerea<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap005l.png"/></TD></TR><TR><TD><B>Aerodinamica</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Caccia<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Aeroporto<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Base aerea<BR align="left" /></TD></TR><TR><TD align="text">Base aerea<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_JET_PROPULSION	[color="#88888855",
@@ -156,7 +156,7 @@ digraph G {
 			node_HT_SUPERCONDUCTOR	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_EIGHT,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap052l.png"/></TD></TR><TR><TD><B>Superconduttori</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Lab. dinamica campi<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Ferrovie levitaz. magnetica<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap052l.png"/></TD></TR><TR><TD><B>Superconduttori</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Lab. dinamica campi<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Ferrovie levitaz. magnetica<BR align="left" /></TD></TR><TR><TD align="text">Ferrovie levitaz. magnetica<BR align="left" /></TD></TR><TR><TD align="text">Ferrovie levitaz. magnetica<BR align="left" /></TD></TR><TR><TD align="text">Ferrovie levitaz. magnetica<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_LIQUID_BREATHING_APPARATUS	[color="#88888855",
@@ -180,7 +180,7 @@ digraph G {
 			node_NANO_ASSEMBLY	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_EIGHT,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap069l.png"/></TD></TR><TR><TD><B>Nanoassemblaggio</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Ingegnere marino<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fabbrica a naniti<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Galleria sottomarina<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap069l.png"/></TD></TR><TR><TD><B>Nanoassemblaggio</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Ingegnere marino<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fabbrica a naniti<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Galleria sottomarina<BR align="left" /></TD></TR><TR><TD align="text">Galleria sottomarina<BR align="left" /></TD></TR><TR><TD align="text">Galleria sottomarina<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_GENETICS	[color="#88888855",
@@ -216,13 +216,13 @@ digraph G {
 			node_ADVANCED_COMPOSITES	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_SEVEN,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap004l.png"/></TD></TR><TR><TD><B>Materiali compositi av.</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Bombardiere antiradar<BR align="left" /></TD></TR><TR><TD align="text">Caccia antiradar<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap004l.png"/></TD></TR><TR><TD><B>Materiali compositi av.</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Bombardiere antiradar<BR align="left" /></TD></TR><TR><TD align="text">Caccia antiradar<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Ghiacciaio<BR align="left" /></TD></TR><TR><TD align="text">Tundra<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_ROBOTICS	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_SEVEN,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap090l.png"/></TD></TR><TR><TD><B>Robotica</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fabbrica robotica<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Riserve di pesca automat.<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap090l.png"/></TD></TR><TR><TD><B>Robotica</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fabbrica robotica<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Riserve di pesca automat.<BR align="left" /></TD></TR><TR><TD align="text">Riserve di pesca automat.<BR align="left" /></TD></TR><TR><TD align="text">Riserve di pesca automat.<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_GLOBAL_ECONOMICS	[color="#88888855",
@@ -282,7 +282,7 @@ digraph G {
 			node_ULTRAPRESSURE_MACHINERY	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_NINE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap103l.png"/></TD></TR><TR><TD><B>Macchine abissali</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Granchio<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Miniere sottomarine avanz.<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap103l.png"/></TD></TR><TR><TD><B>Macchine abissali</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Granchio<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Miniere sottomarine avanz.<BR align="left" /></TD></TR><TR><TD align="text">Miniere sottomarine avanz.<BR align="left" /></TD></TR><TR><TD align="text">Miniere sottomarine avanz.<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_UNIFIED_PHYSICS	[color="#88888855",
@@ -306,7 +306,7 @@ digraph G {
 			node_FUSION	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_NINE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap040l.png"/></TD></TR><TR><TD><B>Fusione nucleare</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Carro armato a fusione<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Centrale a fusione<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap040l.png"/></TD></TR><TR><TD><B>Fusione nucleare</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Carro armato a fusione<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Centrale a fusione<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Montagna desertica<BR align="left" /></TD></TR><TR><TD align="text">Montagna<BR align="left" /></TD></TR><TR><TD align="text">Montagna polare<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_CYBERNETICS	[color="#88888855",
@@ -330,13 +330,13 @@ digraph G {
 			node_SMART_MATERIALS	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_NINE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap093l.png"/></TD></TR><TR><TD><B>Materiali intelligenti</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Proteus<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mega-miniere sottomarine<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap093l.png"/></TD></TR><TR><TD><B>Materiali intelligenti</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Proteus<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mega-miniere sottomarine<BR align="left" /></TD></TR><TR><TD align="text">Mega-miniere sottomarine<BR align="left" /></TD></TR><TR><TD align="text">Mega-miniere sottomarine<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_NANO_MACHINES	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_NINE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap070l.png"/></TD></TR><TR><TD><B>Nanomacchine</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Depuratore a naniti<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Neutralizzatore a naniti<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Miniere sottomarine<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap070l.png"/></TD></TR><TR><TD><B>Nanomacchine</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Depuratore a naniti<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Neutralizzatore a naniti<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Miniere sottomarine<BR align="left" /></TD></TR><TR><TD align="text">Miniere sottomarine<BR align="left" /></TD></TR><TR><TD align="text">Miniere sottomarine<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_ECOTOPIA	[color="#88888855",
@@ -414,7 +414,7 @@ digraph G {
 			node_OCEAN_FARING	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_FOUR,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap078l.png"/></TD></TR><TR><TD><B>Navigazione oceanica</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Caracca<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Compagnia Indie Orientali<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Riserve di pesca<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap078l.png"/></TD></TR><TR><TD><B>Navigazione oceanica</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Caracca<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Compagnia Indie Orientali<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Riserve di pesca<BR align="left" /></TD></TR><TR><TD align="text">Riserve di pesca<BR align="left" /></TD></TR><TR><TD align="text">Riserve di pesca<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_OPTICS	[color="#88888855",
@@ -468,13 +468,13 @@ digraph G {
 			node_INDUSTRIAL_REVOLUTION	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_FIVE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap055l.png"/></TD></TR><TR><TD><B>Rivoluzione industriale</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mitragliere<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fabbrica<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap055l.png"/></TD></TR><TR><TD><B>Rivoluzione industriale</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mitragliere<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fabbrica<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Palude<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_RAILROAD	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_FIVE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap088l.png"/></TD></TR><TR><TD><B>Ferrovia</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Silo per cibo<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Ferrovie<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap088l.png"/></TD></TR><TR><TD><B>Ferrovia</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Silo per cibo<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Ferrovie<BR align="left" /></TD></TR><TR><TD align="text">Ferrovie<BR align="left" /></TD></TR><TR><TD align="text">Ferrovie<BR align="left" /></TD></TR><TR><TD align="text">Ferrovie<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_ELECTRICITY	[color="#88888855",
@@ -492,7 +492,7 @@ digraph G {
 			node_EXPLOSIVES	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_FIVE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap036l.png"/></TD></TR><TR><TD><B>Esplosivi</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Artiglieria<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Miniere avanzate<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap036l.png"/></TD></TR><TR><TD><B>Esplosivi</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Artiglieria<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Miniere avanzate<BR align="left" /></TD></TR><TR><TD align="text">Miniere avanzate<BR align="left" /></TD></TR><TR><TD align="text">Miniere avanzate<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Collina desertica<BR align="left" /></TD></TR><TR><TD align="text">Collina<BR align="left" /></TD></TR><TR><TD align="text">Collina polare<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_FASCISM	[color="#ff000055",
@@ -522,7 +522,7 @@ digraph G {
 			node_AGRICULTURAL_REVOLUTION	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_THREE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap007l.png"/></TD></TR><TR><TD><B>Rivoluzione agricola</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mulino<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fattorie avanzate<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap007l.png"/></TD></TR><TR><TD><B>Rivoluzione agricola</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mulino<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fattorie avanzate<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Deserto<BR align="left" /></TD></TR><TR><TD align="text">Foresta<BR align="left" /></TD></TR><TR><TD align="text">Giungla<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_BALLISTICS	[color="#88888855",
@@ -594,7 +594,7 @@ digraph G {
 			node_TRADE	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_ONE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap102l.png"/></TD></TR><TR><TD><B>Commercio</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Carovana<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Bazar<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Via Appia<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Strade<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap102l.png"/></TD></TR><TR><TD><B>Commercio</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Carovana<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Bazar<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Via Appia<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Strade<BR align="left" /></TD></TR><TR><TD align="text">Strade<BR align="left" /></TD></TR><TR><TD align="text">Strade<BR align="left" /></TD></TR><TR><TD align="text">Strade<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_BRONZE_WORKING	[color="#88888855",
@@ -618,7 +618,7 @@ digraph G {
 			node_SHIP_BUILDING	[color="#00ff0055",
 				fontcolor="#ffffff88",
 				group=AGE_ONE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap091l.png"/></TD></TR><TR><TD><B>Costruzioni navali</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Barca di vimini<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Reti<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap091l.png"/></TD></TR><TR><TD><B>Costruzioni navali</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Barca di vimini<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Reti<BR align="left" /></TD></TR><TR><TD align="text">Reti<BR align="left" /></TD></TR><TR><TD align="text">Reti<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_STONE_WORKING	[color="#00ff0055",
@@ -630,7 +630,7 @@ digraph G {
 			node_TOOLMAKING	[color="#00ff0055",
 				fontcolor="#ffffff88",
 				group=AGE_ONE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap101l.png"/></TD></TR><TR><TD><B>Fabbricazione utensili</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Guerriero<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap101l.png"/></TD></TR><TR><TD><B>Fabbricazione utensili</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Guerriero<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Prateria<BR align="left" /></TD></TR><TR><TD align="text">Pianura<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_WRITING	[color="#00ff0055",
@@ -648,7 +648,7 @@ digraph G {
 			node_SLAVE_LABOR	[color="#ff000055",
 				fontcolor="#ffffff88",
 				group=AGE_TWO,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap092l.png"/></TD></TR><TR><TD><B>Uso degli schiavi</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Schiavista<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Miniere<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap092l.png"/></TD></TR><TR><TD><B>Uso degli schiavi</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Schiavista<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Miniere<BR align="left" /></TD></TR><TR><TD align="text">Miniere<BR align="left" /></TD></TR><TR><TD align="text">Miniere<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_IRON_WORKING	[color="#88888855",
