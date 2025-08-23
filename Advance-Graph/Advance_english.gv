@@ -678,7 +678,7 @@ digraph G {
 			node_JURISPRUDENCE	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_TWO,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap059l.png"/></TD></TR><TR><TD><B>Jurisprudence</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Courthouse<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Chichén Itzá<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap059l.png"/></TD></TR><TR><TD><B>Jurisprudence</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Courthouse<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Chich<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 		}

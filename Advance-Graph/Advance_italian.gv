@@ -198,7 +198,7 @@ digraph G {
 			node_CHAOS_THEORY	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_EIGHT,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap018l.png"/></TD></TR><TR><TD><B>Teoria del caos</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fanteria antigravità<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap018l.png"/></TD></TR><TR><TD><B>Teoria del caos</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fanteria<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_EUGENICS	[color="#88888855",
@@ -366,7 +366,7 @@ digraph G {
 			node_AGE_OF_REASON	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_FOUR,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap006l.png"/></TD></TR><TR><TD><B>Illuminismo</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Abolizione schiavitù<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap006l.png"/></TD></TR><TR><TD><B>Illuminismo</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Abolizione<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_CHEMISTRY	[color="#88888855",
@@ -396,13 +396,13 @@ digraph G {
 			node_CLASSICAL_EDUCATION	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_FOUR,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap020l.png"/></TD></TR><TR><TD><B>Discipline classiche</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Abolizionista<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Università<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap020l.png"/></TD></TR><TR><TD><B>Discipline classiche</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Abolizionista<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Universit<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_BANKING	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_FOUR,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap013l.png"/></TD></TR><TR><TD><B>Attività bancarie</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Banca<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap013l.png"/></TD></TR><TR><TD><B>Attivit</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Banca<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_PRINTING_PRESS	[color="#88888855",
@@ -480,7 +480,7 @@ digraph G {
 			node_ELECTRICITY	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_FIVE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap034l.png"/></TD></TR><TR><TD><B>Elettricità</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Cinema<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Postazione d'ascolto<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap034l.png"/></TD></TR><TR><TD><B>Elettricit</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Cinema<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Postazione d'ascolto<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_COMMUNISM	[color="#88888855",
@@ -660,7 +660,7 @@ digraph G {
 			node_CONCRETE	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_TWO,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap023l.png"/></TD></TR><TR><TD><B>Cemento</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Arena<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Città proibita<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap023l.png"/></TD></TR><TR><TD><B>Cemento</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Arena<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Citt<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_PHILOSOPHY	[color="#88888855",
