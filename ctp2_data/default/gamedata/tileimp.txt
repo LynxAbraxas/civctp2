@@ -1644,13 +1644,6 @@ TILEIMP_TERRAFORM_BROWN_HILL {
    Excludes:Road
    Excludes:Structure1
    Excludes:Structure2
-
-   TerrainEffect {
-      Terrain TERRAIN_BROWN_HILL
-
-      EnableAdvance ADVANCE_EXPLOSIVES
-      TilesetIndex 1
-   }
 }
 
 ## 25 ##########################################################
@@ -1692,13 +1685,6 @@ TILEIMP_TERRAFORM_BROWN_MOUNTAIN {
    Excludes:Road
    Excludes:Structure1
    Excludes:Structure2
-
-   TerrainEffect {
-      Terrain TERRAIN_BROWN_MOUNTAIN
-
-      EnableAdvance ADVANCE_FUSION
-      TilesetIndex 1
-   }
 }
 
 ## 26 ##########################################################
@@ -1740,13 +1726,6 @@ TILEIMP_TERRAFORM_DESERT {
    Excludes:Road
    Excludes:Structure1
    Excludes:Structure2
-
-   TerrainEffect {
-      Terrain TERRAIN_DESERT
-
-      EnableAdvance ADVANCE_AGRICULTURAL_REVOLUTION
-      TilesetIndex 1
-   }
 }
 
 ## 27 ##########################################################
@@ -1788,13 +1767,6 @@ TILEIMP_TERRAFORM_FOREST {
    Excludes:Structure2
    Excludes:Road
    Excludes:OceanRoad
-
-   TerrainEffect {
-      Terrain TERRAIN_FOREST
-
-      EnableAdvance ADVANCE_AGRICULTURAL_REVOLUTION
-      TilesetIndex 1
-   }
 }
 
 ## 28 ##########################################################
@@ -1836,13 +1808,6 @@ TILEIMP_TERRAFORM_GRASSLAND {
    Excludes:ATM
    Excludes:OceanRoad
    Excludes:Road
-
-   TerrainEffect {
-      Terrain TERRAIN_GRASSLAND
-
-      EnableAdvance ADVANCE_AGRICULTURE
-      TilesetIndex 1
-   }
 }
 
 ## 29 ##########################################################
@@ -1884,13 +1849,6 @@ TILEIMP_TERRAFORM_HILL {
    Excludes:Road
    Excludes:Structure1
    Excludes:Structure2
-
-   TerrainEffect {
-      Terrain TERRAIN_HILL
-
-      EnableAdvance ADVANCE_EXPLOSIVES
-      TilesetIndex 1
-   }
 }
 
 ## 30 ##########################################################
@@ -1932,13 +1890,6 @@ TILEIMP_TERRAFORM_JUNGLE {
    Excludes:Road
    Excludes:Structure1
    Excludes:Structure2
-
-   TerrainEffect {
-      Terrain TERRAIN_JUNGLE
-
-      EnableAdvance ADVANCE_AGRICULTURAL_REVOLUTION
-      TilesetIndex 1
-   }
 }
 
 ## 31 ##########################################################
@@ -1980,13 +1931,6 @@ TILEIMP_TERRAFORM_MOUNTAIN {
    Excludes:Road
    Excludes:Structure1
    Excludes:Structure2
-
-   TerrainEffect {
-      Terrain TERRAIN_MOUNTAIN
-
-      EnableAdvance ADVANCE_FUSION
-      TilesetIndex 1
-   }
 }
 
 ## 32 ##########################################################
@@ -2028,13 +1972,6 @@ TILEIMP_TERRAFORM_PLAINS {
    Excludes:Structure2
    Excludes:Road
    Excludes:OceanRoad
-
-   TerrainEffect {
-      Terrain TERRAIN_PLAINS
-
-      EnableAdvance ADVANCE_AGRICULTURE
-      TilesetIndex 1
-   }
 }
 
 ## 33 ##########################################################
@@ -2076,13 +2013,6 @@ TILEIMP_TERRAFORM_SWAMP {
    Excludes:Road
    Excludes:Structure1
    Excludes:Structure2
-
-   TerrainEffect {
-      Terrain TERRAIN_SWAMP
-
-      EnableAdvance ADVANCE_INDUSTRIAL_REVOLUTION
-      TilesetIndex 1
-   }
 }
 
 ## 34 ##########################################################
@@ -2124,13 +2054,6 @@ TILEIMP_TERRAFORM_WHITE_HILL {
    Excludes:Road
    Excludes:Structure1
    Excludes:Structure2
-
-   TerrainEffect {
-      Terrain TERRAIN_WHITE_HILL
-
-      EnableAdvance ADVANCE_EXPLOSIVES
-      TilesetIndex 1
-   }
 }
 
 ## 35 ##########################################################
@@ -2172,13 +2095,6 @@ TILEIMP_TERRAFORM_WHITE_MOUNTAIN {
    Excludes:Road
    Excludes:Structure1
    Excludes:Structure2
-
-   TerrainEffect {
-      Terrain TERRAIN_WHITE_MOUNTAIN
-
-      EnableAdvance ADVANCE_FUSION
-      TilesetIndex 1
-   }
 }
 
 ## 36 ##########################################################

@@ -306,7 +306,7 @@ digraph G {
 			node_FUSION	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_NINE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap040l.png"/></TD></TR><TR><TD><B>Fusione nucleare</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Carro armato a fusione<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Centrale a fusione<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Trasforma in montagna desertica<BR align="left" /></TD></TR><TR><TD align="text">Trasforma in montagna<BR align="left" /></TD></TR><TR><TD align="text">Trasforma in montagna polare<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap040l.png"/></TD></TR><TR><TD><B>Fusione nucleare</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Carro armato a fusione<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Centrale a fusione<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_CYBERNETICS	[color="#88888855",
@@ -468,7 +468,7 @@ digraph G {
 			node_INDUSTRIAL_REVOLUTION	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_FIVE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap055l.png"/></TD></TR><TR><TD><B>Rivoluzione industriale</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mitragliere<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fabbrica<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Trasforma in palude<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap055l.png"/></TD></TR><TR><TD><B>Rivoluzione industriale</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mitragliere<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fabbrica<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_RAILROAD	[color="#88888855",
@@ -492,7 +492,7 @@ digraph G {
 			node_EXPLOSIVES	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_FIVE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap036l.png"/></TD></TR><TR><TD><B>Esplosivi</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Artiglieria<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Miniere avanzate<BR align="left" /></TD></TR><TR><TD align="text">Trasforma in collina desertica<BR align="left" /></TD></TR><TR><TD align="text">Trasforma in collina<BR align="left" /></TD></TR><TR><TD align="text">Trasforma in collina polare<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap036l.png"/></TD></TR><TR><TD><B>Esplosivi</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Artiglieria<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Miniere avanzate<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_FASCISM	[color="#ff000055",
@@ -522,7 +522,7 @@ digraph G {
 			node_AGRICULTURAL_REVOLUTION	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_THREE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap007l.png"/></TD></TR><TR><TD><B>Rivoluzione agricola</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mulino<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fattorie avanzate<BR align="left" /></TD></TR><TR><TD align="text">Trasforma in deserto<BR align="left" /></TD></TR><TR><TD align="text">Trasforma in foresta<BR align="left" /></TD></TR><TR><TD align="text">Trasforma in giungla<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap007l.png"/></TD></TR><TR><TD><B>Rivoluzione agricola</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mulino<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fattorie avanzate<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_BALLISTICS	[color="#88888855",
@@ -588,7 +588,7 @@ digraph G {
 			node_AGRICULTURE	[color="#00ff0055",
 				fontcolor="#ffffff88",
 				group=AGE_ONE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap008l.png"/></TD></TR><TR><TD><B>Agricoltura</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Granaio<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fattorie<BR align="left" /></TD></TR><TR><TD align="text">Trasforma in prateria<BR align="left" /></TD></TR><TR><TD align="text">Trasforma in pianura<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap008l.png"/></TD></TR><TR><TD><B>Agricoltura</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Granaio<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Fattorie<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_TRADE	[color="#88888855",

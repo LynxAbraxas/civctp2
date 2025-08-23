@@ -306,7 +306,7 @@ digraph G {
 			node_FUSION	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_NINE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap040l.png"/></TD></TR><TR><TD><B>Fusion</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Char<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Centrale<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Terraform.<BR align="left" /></TD></TR><TR><TD align="text">Terraformer montagne<BR align="left" /></TD></TR><TR><TD align="text">Terraformer mont. pol.<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap040l.png"/></TD></TR><TR><TD><B>Fusion</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Char<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Centrale<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_CYBERNETICS	[color="#88888855",
@@ -468,7 +468,7 @@ digraph G {
 			node_INDUSTRIAL_REVOLUTION	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_FIVE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap055l.png"/></TD></TR><TR><TD><B>R</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mitrailleur<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Usine<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Terraformer<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap055l.png"/></TD></TR><TR><TD><B>R</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mitrailleur<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Usine<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_RAILROAD	[color="#88888855",
@@ -492,7 +492,7 @@ digraph G {
 			node_EXPLOSIVES	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_FIVE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap036l.png"/></TD></TR><TR><TD><B>Explosifs</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Artillerie<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mine<BR align="left" /></TD></TR><TR><TD align="text">Terraform.<BR align="left" /></TD></TR><TR><TD align="text">Terraformer colline<BR align="left" /></TD></TR><TR><TD align="text">Terraformer coll. pol.<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap036l.png"/></TD></TR><TR><TD><B>Explosifs</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Artillerie<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Mine<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_FASCISM	[color="#ff000055",
@@ -522,7 +522,7 @@ digraph G {
 			node_AGRICULTURAL_REVOLUTION	[color="#88888855",
 				fontcolor="#ffffff88",
 				group=AGE_THREE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap007l.png"/></TD></TR><TR><TD><B>R</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Moulin<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Ferme<BR align="left" /></TD></TR><TR><TD align="text">Terraformer<BR align="left" /></TD></TR><TR><TD align="text">Terraformer<BR align="left" /></TD></TR><TR><TD align="text">Terraformer jungle<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="cm2_upap007l.png"/></TD></TR><TR><TD><B>R</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Moulin<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Ferme<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_BALLISTICS	[color="#88888855",
@@ -588,7 +588,7 @@ digraph G {
 			node_AGRICULTURE	[color="#00ff0055",
 				fontcolor="#ffffff88",
 				group=AGE_ONE,
-				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap008l.png"/></TD></TR><TR><TD><B>Agriculture</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Grenier<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Ferme<BR align="left" /></TD></TR><TR><TD align="text">Terraformer prairies<BR align="left" /></TD></TR><TR><TD align="text">Terraformer plaines<BR align="left" /></TD></TR></TABLE>>,
+				label=<<TABLE border="0" cellspacing="0" cellborder="0"><TR><TD><IMG SCALE="TRUE" SRC="upap008l.png"/></TD></TR><TR><TD><B>Agriculture</B></TD></TR><TR><TD></TD></TR><TR><TD align="text">Grenier<BR align="left" /></TD></TR><TR><TD></TD></TR><TR><TD align="text">Ferme<BR align="left" /></TD></TR></TABLE>>,
 				shape=box,
 				style=filled];
 			node_TRADE	[color="#88888855",
