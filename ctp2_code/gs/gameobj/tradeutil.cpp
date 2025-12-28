@@ -83,7 +83,7 @@ sint32 tradeutil_GetTradeValue(const sint32 owner, const Unit & destination, sin
 sint32 tradeutil_GetTradeDistance(const Unit &source, const Unit &destination)
 {
 	Path    path;
-	double  cost;
+	float   cost;
 
 #ifdef USE_PRECISETRADEROUTECALC
 // used to be tradeutil_GetAccurateTradeDistance which is exact but takes much longer to compute due to use of astar
@@ -91,7 +91,7 @@ sint32 tradeutil_GetTradeDistance(const Unit &source, const Unit &destination)
 	        (source.GetOwner(), source.RetPos(), destination.RetPos(), path, cost, FALSE)
 	   )
 	{
-		return static_cast<sint32>(std::round(std::max<double>(tradeutil_GetNetTradeCosts(cost), 1.0)));
+		return static_cast<sint32>(std::round(std::max<float>(tradeutil_GetNetTradeCosts(cost), 1.0)));
 	}
 
 	return DISTANCE_UNKNOWN;
@@ -101,7 +101,7 @@ sint32 tradeutil_GetTradeDistance(const Unit &source, const Unit &destination)
 	cost = 5.0 * // used to be g_theWorld->CalcTerrainFreightCost(source.RetPos()) * which was just returning 5 as a const in orig code: https://github.com/civctp2/civctp2/blob/d614fbdf705db334a4b45037bbcc735142d22016/ctp2_code/gs/world/wldgen.cpp#L1984-L1990
 	    static_cast<double>(source.RetPos().NormalizedDistance(destination.RetPos()));
 
-	return static_cast<sint32>(std::max<double>(tradeutil_GetNetTradeCosts(cost), 1.0));
+	return static_cast<sint32>(std::max<float>(tradeutil_GetNetTradeCosts(cost), 1.0));
 
 #endif // USE_PRECISETRADEROUTECALC
 }
