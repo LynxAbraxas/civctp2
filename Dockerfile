@@ -1,7 +1,10 @@
 ################################################################################
 # base system
 ################################################################################
-FROM debian as system
+ARG TIMESTAMP=20231128
+
+FROM ubuntu:jammy-"$TIMESTAMP" as system
+ARG TIMESTAMP # has to be redeclared for stage: https://docs.docker.com/build/building/variables/#scoping
 
 ENV USERNAME diUser
 RUN useradd -m $USERNAME && \
@@ -9,6 +12,19 @@ RUN useradd -m $USERNAME && \
     usermod --shell /bin/bash $USERNAME && \
     usermod -aG video,audio $USERNAME
 
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Etc/UTC
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends ca-certificates apt=2.4.11 # essential to avoid error for snapshot repos: "No system certificates available."
+
+ENV SNAPSHOT_ID=${TIMESTAMP}T000000Z
+RUN sed -i 's/^deb /deb [snapshot=yes] /' /etc/apt/sources.list # needed for snapshots in ubuntu:22.04 : https://documentation.ubuntu.com/server/how-to/software/snapshot-service/#prerequisites
+
+
+RUN echo "APT::Snapshot $SNAPSHOT_ID;" > /etc/apt/apt.conf.d/50snapshot && \
+    cat /etc/apt/apt.conf.d/50snapshot && \
+    apt-get --version # apt >= 2.4.11 needed for snapshots in ubuntu:22.04 
 
 ################################################################################
 # builder
@@ -16,7 +32,7 @@ RUN useradd -m $USERNAME && \
 FROM system as builder
 
 RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get install -y --no-install-recommends \
+    apt-get install -y --no-install-recommends \
     libsdl2-dev libsdl2-mixer-dev libsdl2-image-dev libtiff-dev libavcodec-dev libavformat-dev libswscale-dev \
     byacc gcc g++ binutils-gold automake make libtool unzip flex git ca-certificates
 
@@ -38,8 +54,8 @@ ARG BTYP
 
 RUN cd /ctp2 \
     && ./autogen.sh && \
-    CFLAGS="$CFLAGS -Wno-misleading-indentation $( [ "${BTYP##*debug*}" ] && echo -O3 || echo -g -rdynamic ) -fuse-ld=gold" \
-    CXXFLAGS="$CXXFLAGS -Wno-misleading-indentation -fpermissive $( [ "${BTYP##*debug*}" ] && echo -O3 || echo -g -rdynamic ) -fuse-ld=gold" \
+    CFLAGS="$CFLAGS -Wno-misleading-indentation $( [ "${BTYP##*debug*}" ] && echo -O3 || echo -ggdb -rdynamic ) -fuse-ld=gold" \
+    CXXFLAGS="$CXXFLAGS -Wno-misleading-indentation -fpermissive $( [ "${BTYP##*debug*}" ] && echo -O3 || echo -ggdb -rdynamic ) -fuse-ld=gold" \
     ./configure --prefix=/opt/ctp2 --bindir=/opt/ctp2/ctp2_program/ctp --enable-silent-rules --enable-precisetraderoutecalc $( [ "${BTYP##*debug*}" ] || echo --enable-debug ) \
     && make -j"$(nproc)" \
     && make -j"$(nproc)" install \
@@ -63,7 +79,8 @@ COPY ctp2CD/ /opt/ctp2/
 COPY deb/ /deb/
 
 ## apt install installs local deb-file with its dependencies: https://unix.stackexchange.com/questions/159094/how-to-install-a-deb-file-by-dpkg-i-or-by-apt#159114
-RUN apt-get update && apt install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gdb libstdc++-11-dev \
     /deb/ctp2-${BTYP}.deb && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
