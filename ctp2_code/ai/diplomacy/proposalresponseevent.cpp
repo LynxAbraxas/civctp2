@@ -609,7 +609,7 @@ STDEHANDLER(GiveMap_ProposalResponseEvent)
 	sint32 receiver_saw_map =
 		AgreementMatrix::s_agreements.GetAgreementDuration(receiver, sender, PROPOSAL_REQUEST_MAP);
 
-	sint32 want_map_turns;
+	sint32 want_map_turns = 25; // The setting in diplomacy.txt
 	receiver_diplomat.GetCurrentDiplomacy(sender).GetWantMapTurns(want_map_turns);
 
 	if (receiver_saw_map != -1 &&
