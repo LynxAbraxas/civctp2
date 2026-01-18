@@ -70,8 +70,11 @@ FROM system as install
 
 ARG BTYP
 
-## ctp2CD/ copy done in install stage such that stages before are compatible with travis docker build, results in one additional layer in the final DI (incr. DI download size)
-COPY ctp2CD/ /opt/ctp2/
+## ctp2CD/* copy done in install stage such that stages before are compatible with travis docker build, results in additional layer in the final DI (incr. DI download size)
+## copy subdirs separately to avoid copying other (possibly existing) subdirs that are not needed
+COPY ctp2CD/ctp2_data /opt/ctp2/ctp2_data
+COPY ctp2CD/ctp2_program /opt/ctp2/ctp2_program
+COPY ctp2CD/Scenarios /opt/ctp2/Scenarios
 
 ## ctp2 install has to be after ctp2CD/ to overwrite with newer versions from civctp2
 ## deb-file has to be copied first, sadly this adds a layer (which is not necessary with COPY --from=builder): https://stackoverflow.com/questions/52211895/docker-build-avoid-adding-files-only-needed-at-build-time
