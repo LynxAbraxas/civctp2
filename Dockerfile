@@ -17,7 +17,7 @@ FROM system as builder
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get install -y --no-install-recommends \
-    libsdl2-dev libsdl2-mixer-dev libsdl2-image-dev libtiff-dev libavcodec-dev libavformat-dev libswscale-dev \
+    libx11-dev libxext-dev libtiff-dev libavcodec-dev libavformat-dev libswscale-dev \
     byacc gcc g++ binutils-gold automake make libtool unzip flex git ca-certificates
 
 ### set default compilers
@@ -36,10 +36,25 @@ COPY ctp2_code/  /ctp2/ctp2_code/
 
 ARG BTYP
 
+RUN cd /ctp2/ctp2_code/libs/SDL \
+    && ./configure --prefix=/opt/sdl \
+    && make -j"$(nproc)" \
+    && make -j"$(nproc)" install
+
+RUN cd /ctp2/ctp2_code/libs/SDL_mixer \
+    && ./configure --prefix=/opt/sdl_mixer --with-sdl-prefix=/opt/sdl \
+    && make -j"$(nproc)" \
+    && make -j"$(nproc)" install
+
+RUN cd /ctp2/ctp2_code/libs/SDL_image \
+    && ./configure --prefix=/opt/sdl_image --with-sdl-prefix=/opt/sdl \
+    && make -j"$(nproc)" \
+    && make -j"$(nproc)" install
+
 RUN cd /ctp2 \
     && ./autogen.sh && \
-    CFLAGS="$CFLAGS -Wno-misleading-indentation -Wno-implicit-function-declaration $( [ "${BTYP##*debug*}" ] && echo -O3 || echo -g -rdynamic ) -fuse-ld=gold" \
-    CXXFLAGS="$CXXFLAGS -Wno-misleading-indentation -fpermissive $( [ "${BTYP##*debug*}" ] && echo -O3 || echo -g -rdynamic ) -fuse-ld=gold" \
+    CFLAGS="$CFLAGS -Wno-misleading-indentation -Wno-implicit-function-declaration -I/opt/sdl/include/ -I/opt/sdl/include/SDL2 -I/opt/sdl_image/include/ -I/opt/sdl_mixer/include/ -L/opt/sdl/lib -L/opt/sdl_mixer/lib -L/opt/sdl_image/lib $( [ "${BTYP##*debug*}" ] && echo -O3 || echo -g -rdynamic ) -fuse-ld=gold" \
+    CXXFLAGS="$CXXFLAGS -Wno-misleading-indentation -fpermissive -I/opt/sdl/include/ -I/opt/sdl/include/SDL2 -I/opt/sdl_image/include/ -I/opt/sdl_mixer/include/ -L/opt/sdl/lib -L/opt/sdl_mixer/lib -L/opt/sdl_image/lib $( [ "${BTYP##*debug*}" ] && echo -O3 || echo -g -rdynamic ) -fuse-ld=gold" \
     ./configure --prefix=/opt/ctp2 --bindir=/opt/ctp2/ctp2_program/ctp --enable-silent-rules --enable-precisetraderoutecalc $( [ "${BTYP##*debug*}" ] || echo --enable-debug ) \
     && make -j"$(nproc)" \
     && make -j"$(nproc)" install \
