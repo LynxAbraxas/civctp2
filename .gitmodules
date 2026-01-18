@@ -1,0 +1,9 @@
+[submodule "ctp2_code/libs/SDL"]
+	path = ctp2_code/libs/SDL
+	url = https://github.com/libsdl-org/SDL
+[submodule "ctp2_code/libs/SDL_mixer"]
+	path = ctp2_code/libs/SDL_mixer
+	url = https://github.com/libsdl-org/SDL_mixer
+[submodule "ctp2_code/libs/SDL_image"]
+	path = ctp2_code/libs/SDL_image
+	url = https://github.com/libsdl-org/SDL_image
