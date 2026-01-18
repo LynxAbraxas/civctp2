@@ -17,7 +17,7 @@ FROM system as builder
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get install -y --no-install-recommends \
-    libx11-dev libxext-dev libtiff-dev libavcodec-dev libavformat-dev libswscale-dev \
+    libx11-dev libxext-dev libasound2-dev libtiff-dev libavcodec-dev libavformat-dev libswscale-dev \
     byacc gcc g++ binutils-gold automake make libtool unzip flex git ca-certificates
 
 ### set default compilers
